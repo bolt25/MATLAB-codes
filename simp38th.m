@@ -22,3 +22,5 @@ restSum=sum-multipleof3_Sum-f(endingpoint)-f(startingpoint);
 
 area=(3*h/8)*(f(startingpoint)+2*multipleof3_Sum+3*restSum+f(endingpoint));
 abs(area)
+
+
