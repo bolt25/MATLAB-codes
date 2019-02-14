@@ -1,0 +1,24 @@
+clear all;
+clc;
+number=input('number of equations');
+disp('--------------------------------------');
+for i=1:number
+    for j=1:number
+        A(i,j)=input('Enter %d %d coeff',i,j);
+    end
+end
+A=reshape(A,number,number);
+disp('--------------------------------------');
+for k=1:number
+    constants(k)=input('Enter the constants of the %d equation present on the RHS');
+end
+constants=reshape(constants,number,1);
+C=[A,constants];
+
+for rows=1:n-1
+    for cols=1:n-rows
+        alpha = C(rows+cols,rows)/C(rows,rows);
+        C(rows+cols,:)=C(rows+cols,:)-m*C(rows,:);
+    end
+end
+
