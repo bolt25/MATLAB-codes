@@ -1,7 +1,7 @@
 clear all;
 clc;
 
-f=input('Enter Function: ');
+f=(input('Enter Function: ')); %enter function like for eg. @(x) x^3+1
 
 n=input('Enter number of intervals: ');   %interval should be a multiple of 3
 startingpoint=input('Enter starting value: ');

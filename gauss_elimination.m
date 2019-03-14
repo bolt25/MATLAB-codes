@@ -15,8 +15,8 @@ end
 constants=reshape(constants,number,1);
 C=[A,constants];
 
-for rows=1:number-1
-    for cols=1:number-rows
+for rows=1:number-1                                %selects the row for iteration
+    for cols=1:number-rows                         %decides how many times a loop needs to be executed. Eg- if a matrix is 3x3 when 1st row is selected the loops needs to run for 2 times and when row 2 is selected loop needs to run for 1 time.
         alpha = C(rows+cols,rows)/C(rows,rows);
         C(rows+cols,:)=C(rows+cols,:)-alpha*C(rows,:);
     end

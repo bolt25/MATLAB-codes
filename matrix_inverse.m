@@ -35,8 +35,8 @@ for i=1:number
         end
     end
 end
-
-disp(C);
+sprintf('The inverted matrix is ');
+disp(C(:,number+1:end));
 
 X=zeros(number,1);
 
