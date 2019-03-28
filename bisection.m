@@ -14,6 +14,6 @@ for i=1:100
     end
 end
 
-c
+disp(c);
 
 
