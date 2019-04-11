@@ -35,7 +35,7 @@ for j=3:number+1   % here column controlled loop is outer loop rather than row c
         end
     end
 end
-coeff=matrix(1,2:end);
+coeff=matrix(1,2:end); 
 p_matrix=ones(order+1,1);
 for i=2:length(x)
     for j=1:(i-1)

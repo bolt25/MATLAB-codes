@@ -18,4 +18,4 @@ for i=1:(order+1)
 end
 y_sum=reshape(y_sum,length(y_sum),1);
 weights=(x_sum)\y_sum;
-disp(weights)
+disp(weights) 

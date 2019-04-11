@@ -1,8 +1,9 @@
 clear all;
 clc;
-f=input('Enter 1 func');
-a=input('inital pt');
-b=input('final pt');
+syms x;
+f(x)=input('Enter 1 func: ');
+a=input('inital pt: ');
+b=input('final pt: ');
 for i=1:100
     c=(a*f(b)-(b*f(a)))/(f(b)-f(a));
     if f(c)*f(a)<0

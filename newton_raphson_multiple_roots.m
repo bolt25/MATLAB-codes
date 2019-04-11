@@ -8,7 +8,7 @@ p=input('Enter the value of p(number of equal roots): ');
 df(x)=diff(f(x));
 
 copy_f(x)=f(x);
-xi=input('Enter Xs starting value: ');
+xi=input('Enter X''s starting value: ');
 x_matrix=zeros(p,1);
 for i=p:-1:1
     copy_xi=xi;

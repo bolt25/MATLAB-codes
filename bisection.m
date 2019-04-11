@@ -1,6 +1,7 @@
 clear all;
 clc;
-f=input('Enter function: ');
+syms x;
+f(x)=input('Enter function: ');
 
 a=input('Enter A: ');
 b=input('Enter B: ');

@@ -1,6 +1,7 @@
 clear all;
 clc;
-f=input('Enter the slope function- '); %enter function like for eg. @(x) x^2+1
+syms x;
+f(x)=input('Enter the slope function- '); %enter function like for eg. x^2+1
 startpoint=input('Enter the starting point- ');
 endpoint=input('Enter the ending point- ');
 interval=input('Enter number of intervals- ');
@@ -14,4 +15,5 @@ for i=1:interval
 end
 disp(y);
 
-%@(x) (-2.2067*10^(-12))*((x.^4)-81*(10^8))
+%(-2.2067*10^(-12))*((x.^4)-81*(10^8))
+ 

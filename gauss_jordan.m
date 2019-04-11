@@ -22,7 +22,7 @@ for rows=1:number-1
     end
 end
 
-for rows=number:-1:number-1
+for rows=number:-1:1
     for cols=rows-1:-1:1
         alpha = C(cols,rows)/C(rows,rows);
         C(cols,:)=C(cols,:)-alpha*C(rows,:);

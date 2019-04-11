@@ -13,7 +13,7 @@ matrix=zeros(number,number+1);
 matrix(:,1:2)=[x,y];
 for j=3:number+1   % here column controlled loop is outer loop rather than row controlled loop
     for i=1:number
-        if(i < length(matrix(:,1))-(j-3))  %every subsequent column has one element less then previous row rest all entries are zero for that row
+        if(i < length(matrix(:,1)) - (j-3))  %every subsequent column has one element less then previous row rest all entries are zero for that row
             matrix(i,j)= (matrix(i+1,j-1)-matrix(i,j-1))/(matrix(i+j-2,1)-matrix(i,1));   
         end
       

@@ -23,3 +23,4 @@ for i=1:number
 end
 answer=x_answer * coeff;
 disp(answer);
+

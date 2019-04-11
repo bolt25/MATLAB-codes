@@ -10,7 +10,7 @@ df_x(x,y)=diff(f,x);
 df_y(x,y)=diff(f,y);
 dg_x(x,y)=diff(g,x);
 dg_y(x,y)=diff(g,y);
-
+ 
 xi=input('Enter Xs starting value: ');
 yi=input('Enter Ys starting value: ');
 

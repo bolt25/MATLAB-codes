@@ -1,5 +1,6 @@
 clc;
 clear all;
+syms xi;
 number_of_datapoints=input('Enter the number of datapoints: ');
 for i=1:number_of_datapoints
     x(i)=input('Enter x: ');
@@ -27,7 +28,7 @@ C=inline(C);
 D=inline(D);
 
 a=input('Initial estimation of lambda: ');
-b=input('False estimation of lambda: ');
+b=input('Final estimation of lambda: ');
 lambda_answer=(a*f(b)-(b*f(a)))/(f(b)-f(a));
 error=input('Enter stopping criterion: ');
 
@@ -45,3 +46,13 @@ disp('----------');
 disp(double(lambda_answer));  %answer will give the value of lambda
 g(lambda)= B(lambda)/C(lambda);
 disp(double(g(lambda_answer)));
+
+
+
+func(xi)=double(g(lambda_answer))*exp(double(lambda_answer)*xi);
+for i=1:length(x)
+y_func(i)=func(x(i));
+end
+plot(x,y);
+hold on;
+plot(x,y_func)

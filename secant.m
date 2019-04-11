@@ -1,7 +1,7 @@
 clear all;
 format long;
 clc;
-syms f(x);
+syms x;
 f(x)=input('Enter 1 func:');
 a=input('inital guess pt 1:');
 b=input('initial guess pt 2:');
@@ -12,7 +12,7 @@ b=input('initial guess pt 2:');
 for i=1:1000
     dfx = (f(b)-f(a))/(b-a);
     h = double(f(b)/(dfx));
-    c = b - h;
+    c = b - h; 
     if f(c)*f(b)<0
         a=c;
     elseif f(c)*f(a)<0

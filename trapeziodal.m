@@ -11,7 +11,7 @@ for i= 1:n-1
     sum = sum+forTrapz(startingpoint+i*h);
 end
 area=(h/2)*(forTrapz(startingpoint)+2*sum+forTrapz(endingpoint));
-abs(area)
+abs(area) 
 
 
 

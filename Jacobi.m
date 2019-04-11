@@ -33,7 +33,7 @@ while (abs(min(min(error)))>0.0000001)
     for i=1:size(A,1)
         num = constants(i)-(A(i,1:end)*X(1:size(A,1))-A(i,i)*X(i));
         X(i)=num/A(i,i);
-        error=(X(i)-old(i))/X(i);
+        error(i)=(X(i)-old(i))/X(i);
     end
     old=X;
 end

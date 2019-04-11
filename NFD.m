@@ -8,7 +8,7 @@ disp('---------------------------------');
 for i=1:number
     x(i)=input('Enter x: ');
     y(i)=input('Enter y: ');
-end
+end 
 x=reshape(x,number,1);
 y=reshape(y,number,1);
 disp('---------------------------------');

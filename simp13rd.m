@@ -1,7 +1,7 @@
 clear all;
 clc;
-
-f=input('Enter Function: '); %enter function like for eg. @(x) x^2+1
+syms x;
+f(x)=input('Enter Function: '); %enter function like for eg.  x^2+1
 
 n=input('Enter number of intervals: ');   %interval should be a multiple of 2
 startingpoint=input('Enter starting value: ');
